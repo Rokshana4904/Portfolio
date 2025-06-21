@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Rokshana Talukder Ratri</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header glass">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+            <span class="name">Rokshana Talukder Ratri</span>
+          </a>
+        </div>
+        <nav class="header-nav">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <button class="search-btn" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="menu-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="about-hero" style="margin-top: 8rem">
+      <div class="container">
+        <h1 class="floating">About Me</h1>
+        <p>Get to know the developer behind the code</p>
+      </div>
+    </section>
+
+    <section class="about-content">
+      <div class="container">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+            alt="Rokshana Talukder Ratri"
+          />
+        </div>
+        <div class="about-text">
+          <h3>Frontend Developer</h3>
+          <p>
+            I'm Rokshana Talukder Ratri, a passionate frontend developer with a
+            love for creating beautiful, functional websites. My journey in web
+            development began when I discovered how code could bring creative
+            designs to life.
+          </p>
+          <p>
+            What excites me most about frontend development is the perfect blend
+            of logic and creativity. I enjoy solving problems with code while
+            ensuring the end result is visually appealing and user-friendly.
+          </p>
+          <div class="skills">
+            <h4>Skills & Technologies</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">UI/UX Principles</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">Figma</span>
+            </div>
+          </div>
+          <div class="experience">
+            <h4>My Approach</h4>
+            <div class="experience-item">
+              <p>
+                I believe in writing clean, semantic code that's easy to
+                maintain. My development process focuses on:
+              </p>
+              <ul style="margin-left: 20px; margin-top: 10px">
+                <li>Mobile-first responsive design</li>
+                <li>Performance optimization</li>
+                <li>Accessibility best practices</li>
+                <li>User-centered design</li>
+                <li>Continuous learning and improvement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link active">About</a>
+          <a href="portfolio.html" class="footer-link">Portfolio</a>
+          <a href="#" class="footer-link">Contact</a>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">
+          © 2024 Rokshana Talukder Ratri. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.querySelector(".menu-btn");
+      const headerNav = document.querySelector(".header-nav");
+
+      menuBtn.addEventListener("click", () => {
+        headerNav.classList.toggle("active");
+      });
+
+      // Header scroll effect
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".header");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>

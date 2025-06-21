@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Rokshana Talukder Ratri</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header glass">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+            <span class="name">Rokshana Talukder Ratri</span>
+          </a>
+        </div>
+        <nav class="header-nav">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li>
+              <a href="portfolio.html" class="nav-link active">Portfolio</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <button class="search-btn" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="menu-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="portfolio-hero" style="margin-top: 8rem">
+      <div class="container">
+        <div class="portfolio-hero-content">
+          <h1 class="floating">My Portfolio</h1>
+          <p>A collection of my projects and creative work</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-section">
+      <div class="container">
+        <div class="portfolio-filter">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">HTML/CSS</button>
+          <button class="filter-btn">JavaScript</button>
+          <button class="filter-btn">Responsive</button>
+        </div>
+        <div class="projects-grid">
+          <!-- Bio Data Form -->
+          <div class="project-card glass">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Bio Data Form"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Bio Data Form</h3>
+              <p>Modern personal information form with clean UI design</p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Form Design</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn btn-primary">Live Demo</a>
+                <a href="#" class="btn btn-outline">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Harvard Homepage -->
+          <div class="project-card glass">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Harvard Homepage"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Harvard Homepage</h3>
+              <p>Harvard University homepage clone with responsive design</p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Responsive</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn btn-primary">Live Demo</a>
+                <a href="#" class="btn btn-outline">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Calculator -->
+          <div class="project-card glass">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Interactive Calculator"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Interactive Calculator</h3>
+              <p>Functional calculator with modern UI and operations</p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn btn-primary">Live Demo</a>
+                <a href="#" class="btn btn-outline">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="portfolio.html" class="footer-link active">Portfolio</a>
+          <a href="#" class="footer-link">Contact</a>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">
+          © 2024 Rokshana Talukder Ratri. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.querySelector(".menu-btn");
+      const headerNav = document.querySelector(".header-nav");
+
+      menuBtn.addEventListener("click", () => {
+        headerNav.classList.toggle("active");
+      });
+
+      // Header scroll effect
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".header");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
